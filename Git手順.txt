@@ -1,27 +1,27 @@
 １．Gitのアカウント取得
 
-２．開発環境クライアントPCへのGitクライアントツールインストール
+２．クライアントPCへ、Gitクライアントツールをインストール
 
-　msysgitのインストール
-　　https://git-for-windows.github.io/
-　　https://github.com/git-for-windows/git/releases
+　　msysgitのインストール
+　　　https://git-for-windows.github.io/
+　　　https://github.com/git-for-windows/git/releases
 
-　　　※64ビット端末での検証結果ですが、
-　　　　Git-2.5.2-64-bit.exeまでは、nortonのインストール時の信頼性チェックでクリア済み
-　　　　2.5.3は、インストール時にチェックが発生します。（問題ないとは思われます）
+　　　　※64ビット端末での検証結果ですが、
+　　　　　Git-2.5.2-64-bit.exeまでは、nortonのインストール時の信頼性チェックでクリア済み
+　　　　　2.5.3は、インストール時にチェックが発生します。（問題ないとは思われます）
 
-　参考サイト
-　　インストール作業は下記サイトで問題なく実施可能。
-　　http://moondoldo.com/DoldoWorkz/?Git%2FWindows%E3%81%A7%E4%BD%BF%E3%81%86%28msysgit%E3%83%BBTortoiseGit%29
+　　参考サイト
+　　　インストール作業は下記サイトで問題なく実施可能。
+　　　http://moondoldo.com/DoldoWorkz/?Git%2FWindows%E3%81%A7%E4%BD%BF%E3%81%86%28msysgit%E3%83%BBTortoiseGit%29
 
-　　注意点
-　　　9.[Use OpenSSH] を選択し、[Next >] ボタンをクリックします。
-　　　は表示されなかった。
+　　　注意点
+　　　　9.[Use OpenSSH] を選択し、[Next >] ボタンをクリックします。
+　　　　は表示されなかった。
 
-　　　10.[Checkout as-is, commit as-is] を選択し、[Next >] ボタンをクリックします。
-　　　[Checkout Windows-style, commit Unix-style line endings]を選択しました。
+　　　　10.[Checkout as-is, commit as-is] を選択し、[Next >] ボタンをクリックします。
+　　　　[Checkout Windows-style, commit Unix-style line endings]を選択しました。
 
-３．TortoiseGit をインストール
+３．クライアントPCへTortoiseGit をインストール
 　　https://tortoisegit.org/download/
 
 　　使用するOSにあわせて、どちらかをダウンロードしインストールする
@@ -35,16 +35,28 @@
 
 ４．SSH公開鍵の作成・登録
 
-　SSHの公開鍵を作成しGithubに登録する手順
-　http://monsat.hatenablog.com/entry/generating-ssh-keys-for-github
+　　SSHの公開鍵を作成しGithubに登録する手順
+
+　　参考サイト
+　　http://monsat.hatenablog.com/entry/generating-ssh-keys-for-github
 
 　　
-   ①秘密鍵・公開鍵を作成する
-　　　ssh-keygen -t rsa -C "your_email@example.com"
+　　１秘密鍵・公開鍵を作成する
 
-   ②公開鍵をGithubに預ける
-　　　GitHub画面の、SSH Keysの設定ページにて
-　　　①で作成した公開鍵を登録する
+　　　　ssh-keygen -t rsa -C "your_email@example.com"
+　　　　パスフレーズの確認は、なしでそのままエンター
+　　　　プロンプト内に記載の所定のディレクトリ内に
+　　　　　id_rsa　　　秘密鍵
+　　　　　id_rsa.pub　公開鍵
+　　　　　known_hosts
+
+　　　　　が作成される
+
+　　２公開鍵をGithubに預ける
+　　　　GitHub画面の、SSH Keysの設定ページにて
+　　　　１で作成した公開鍵を登録する(サクラエディタなどでコピー＆ペースト)
 
 ５．TortoiseGitからの接続設定
+　　
+　　クライアントPC内の適当なディレクトリにフォルダを作成する
 　　
