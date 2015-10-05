@@ -1,0 +1,11 @@
+覚書き
+
+アカウント作成
+VPCネットワークの作成
+subnet作成
+routetable作成
+InternetGateway作成
+キーペア作成
+SecurityGroup作成
+EC2起動
+ElasticIPの取得とEC2インスタンスへの割り当て
