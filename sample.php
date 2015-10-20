@@ -1,9 +1,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>サンプル</title>
+<title>繧ｵ繝ｳ繝励Ν</title>
 </head>
 <body>
-<p>今日の日付は<?php echo date("Y/m/d"); ?>です。</p>
+<p>莉頑律縺ｮ譌･莉倥�ｯ<?php echo date("Y/m/d"); ?>縺ｧ縺吶�</p>
 </body>
 </html>
